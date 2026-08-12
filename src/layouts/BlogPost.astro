@@ -7,7 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
 ---
 
 <html lang="en">
@@ -79,6 +79,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					<slot />
 				</div>
 			</article>
+			{tags && (
+				<div class="tags">
+					Tags: {tags.map((tag) => <a href={`/tags/${tag}/`}>#{tag}</a>)}
+				</div>
+			)}
 		</main>
 		<Footer />
 	</body>
