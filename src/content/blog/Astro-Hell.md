@@ -1,7 +1,7 @@
 ---
-title: "La Traviata"
-description: "Lorem ipsum dolor sit amet"
-pubDate: "Aug 09 2026"
+title: "Astro Hell"
+description: "I am scared"
+pubDate: "Aug 12 2026"
 tags: ["Astro", "dev", "passed by abyss", "books"]
 heroImage: "/blog-placeholder-3.jpg"
 ---
